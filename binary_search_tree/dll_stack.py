@@ -16,7 +16,7 @@ class Stack:
         if self.size == 0:
             return None
         self.size -= 1
-        self.storage.remove_from_head()
+        return self.storage.remove_from_head()
 
     def len(self):
         return self.size
