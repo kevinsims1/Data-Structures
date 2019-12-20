@@ -81,13 +81,11 @@ class BinarySearchTree:
             if current_node.left is None and current_node.right is None:
                 print(current_node.value)
             else:
-                if current_node.left is None:
-                    print(current_node.value)
-                else:
-                    current_node.dft_print(current_node.left)
-
+                if current_node.left:
+                    current_node.in_order_print(current_node.left)
+                print(current_node.value)
                 if current_node.right:
-                    current_node.dft_print(current_node.right)
+                    current_node.in_order_print(current_node.right)
         
         
 
